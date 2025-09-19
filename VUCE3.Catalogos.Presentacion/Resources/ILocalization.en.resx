@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aduana.DatosDuplicados" xml:space="preserve">
+    <value>A customs office already exists with the data provided</value>
+  </data>
+  <data name="Aduana.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Aduana.ExisteInstitucionesAutorizadas" xml:space="preserve">
+    <value>Customs is assigned to an authorized institution</value>
+  </data>
+  <data name="Aduana.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Failure to obtain Authorized Institutions</value>
+  </data>
+  <data name="Aduana.NoEncontrada" xml:space="preserve">
+    <value>Customs not found</value>
+  </data>
+  <data name="Aduana.NombreInvalido" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Casa.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 17 characters</value>
+  </data>
+  <data name="Casa.DatosDuplicados" xml:space="preserve">
+    <value>There is already a house with the data provided</value>
+  </data>
+  <data name="Casa.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Casa.NoEncontrada" xml:space="preserve">
+    <value>House not found</value>
+  </data>
+  <data name="Casa.NombreInvalido" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Catalogo.NoEncontrado" xml:space="preserve">
+    <value>Catalog not found</value>
+  </data>
+  <data name="Cliente.DatosDuplicados" xml:space="preserve">
+    <value>There is already a client with the data provided</value>
+  </data>
+  <data name="Cliente.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Cliente.Existe" xml:space="preserve">
+    <value>A client already exists with the data provided</value>
+  </data>
+  <data name="Cliente.FalloServicioRegistro" xml:space="preserve">
+    <value>Failure to get Type Identifiers</value>
+  </data>
+  <data name="Cliente.FechaVencimientoMenorHoy" xml:space="preserve">
+    <value>The expiration date must be higher than today</value>
+  </data>
+  <data name="Cliente.NoEncontrado" xml:space="preserve">
+    <value>Client not found</value>
+  </data>
+  <data name="Cliente.TamanoCodigoCliente" xml:space="preserve">
+    <value>The customer code is a required field, it must have a size greater than 0 and a maximum of 35 characters</value>
+  </data>
+  <data name="Cliente.TamanoNombreCliente" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Cliente.TamanoNroIdentificacion" xml:space="preserve">
+    <value>The identification number format is incorrect</value>
+  </data>
+  <data name="Cliente.tipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>Identification type not found</value>
+  </data>
+  <data name="Cultivo.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, its size must be greater than 0 and a maximum of 25 characters</value>
+  </data>
+  <data name="Cultivo.DatosDuplicados" xml:space="preserve">
+    <value>A crop already exists with the data provided</value>
+  </data>
+  <data name="Cultivo.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Cultivo.IdVariedadInvalido" xml:space="preserve">
+    <value>The variety identifier is a required field and its value must be greater than 0</value>
+  </data>
+  <data name="Cultivo.NoEncontrado" xml:space="preserve">
+    <value>Crop not found</value>
+  </data>
+  <data name="Cultivo.NombreCientificoInvalido" xml:space="preserve">
+    <value>The scientific name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Cultivo.NombreInvalido" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Empresa.NoEncontrada" xml:space="preserve">
+    <value>Company not found</value>
+  </data>
+  <data name="Empresa.NombreExcedeLimite" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Empresas.CodigoExcedeLimite" xml:space="preserve">
+    <value>The code is a required field, its size must be greater than 0 and a maximum of 12 characters</value>
+  </data>
+  <data name="Empresas.DatosDuplicados" xml:space="preserve">
+    <value>Company associated with the regent already exists</value>
+  </data>
+  <data name="Empresas.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Empresas.FalloServicioRegistro" xml:space="preserve">
+    <value>Failure to get Type Identifiers</value>
+  </data>
+  <data name="Empresas.IdProfesionalInvalido" xml:space="preserve">
+    <value>The professional identifier is a required field and its value must be greater than 0</value>
+  </data>
+  <data name="Empresas.NoEncontradas" xml:space="preserve">
+    <value>Companies not found</value>
+  </data>
+  <data name="Empresas.tipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>Type Identification not found</value>
+  </data>
+  <data name="ErrorControler.GeneralError" xml:space="preserve">
+    <value>An error in the server ocurred. Please, try again later.</value>
+  </data>
+  <data name="General.Conflict" xml:space="preserve">
+    <value>A conflict error has occurred.</value>
+  </data>
+  <data name="General.Failure" xml:space="preserve">
+    <value>A failure has occurred</value>
+  </data>
+  <data name="General.Forbidden" xml:space="preserve">
+    <value>A 'Forbidden' error has occurred.</value>
+  </data>
+  <data name="General.NotFound" xml:space="preserve">
+    <value>A 'Not Found' error has occurred.</value>
+  </data>
+  <data name="General.Unauthorized" xml:space="preserve">
+    <value>An 'Unauthorized' error has occurred.</value>
+  </data>
+  <data name="General.Validation" xml:space="preserve">
+    <value>A validation error has occurred.</value>
+  </data>
+  <data name="Imagen.NoEncontrada" xml:space="preserve">
+    <value>Image not found</value>
+  </data>
+  <data name="NoticiasVuce.DatosDuplicados" xml:space="preserve">
+    <value>There is already a new with the data provided</value>
+  </data>
+  <data name="NoticiasVuce.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="NoticiasVuce.NoEncontrada" xml:space="preserve">
+    <value>New not found</value>
+  </data>
+  <data name="Pais.CodigoA2Duplicado" xml:space="preserve">
+    <value>A country with a data provided already exists (A2 code)</value>
+  </data>
+  <data name="Pais.CodigoC3Duplicado" xml:space="preserve">
+    <value>A country with a data provided already exists (C3 code)</value>
+  </data>
+  <data name="Pais.CodigoNumericoDuplicado" xml:space="preserve">
+    <value>A country with a data provided already exists (Numeric code)</value>
+  </data>
+  <data name="NoticiasVuce.TextoInglesInvalido" xml:space="preserve">
+    <value>The VUCE news English text is a required field and its size must be greater than 0</value>
+  </data>
+  <data name="NoticiasVuce.TextoInvalido" xml:space="preserve">
+    <value>The VUCE news text is a required field and its size must be greater than 0</value>
+  </data>
+  <data name="NoticiasVuce.TituloInglesInvalido" xml:space="preserve">
+    <value>The English title of VUCE news is a required field, its size must be greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="NoticiasVuce.TituloInvalido" xml:space="preserve">
+    <value>The VUCE news title is a required field, its size must be greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Pais.DatosDuplicados" xml:space="preserve">
+    <value>A country already exists with the data provided</value>
+  </data>
+  <data name="Pais.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Pais.NoEncontrado" xml:space="preserve">
+    <value>Country not found</value>
+  </data>
+  <data name="Pais.NombreDuplicado" xml:space="preserve">
+    <value>A country with a data provided already exists (Name)</value>
+  </data>
+  <data name="Regente.DatosDuplicados" xml:space="preserve">
+    <value>A regent already exists with the data provided</value>
+  </data>
+  <data name="Regente.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Regente.EmailInvalido" xml:space="preserve">
+    <value>Invalid email</value>
+  </data>
+  <data name="Regente.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Failed to obtain Institutions</value>
+  </data>
+  <data name="Regente.IdInstitucionInvalido" xml:space="preserve">
+    <value>The institution identifier is a required field and its value must be greater than 0</value>
+  </data>
+  <data name="Regente.IntitucionNoEncontrado" xml:space="preserve">
+    <value>Institution not found</value>
+  </data>
+  <data name="Regente.NoEncontrado" xml:space="preserve">
+    <value>Regent not found</value>
+  </data>
+  <data name="Regente.TamanoCodigoRegente" xml:space="preserve">
+    <value>The regent code must be greater than 0 and a maximum of 20 characters</value>
+  </data>
+  <data name="Regente.TamanoEmail" xml:space="preserve">
+    <value>Emails must have a maximun of 100 characters</value>
+  </data>
+  <data name="Regente.TamanoNombre" xml:space="preserve">
+    <value>The name is a required field, its size must be greater than 0 and a maximum of 100 characters.</value>
+  </data>
+  <data name="Regente.TamanoNroIdentificacion" xml:space="preserve">
+    <value>The format of the indentification number is not correct</value>
+  </data>
+  <data name="Regente.TamanoProfesion" xml:space="preserve">
+    <value>The profession is a required field, its size must be greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Regente.TipoIdentificacionIncorrecta" xml:space="preserve">
+    <value>Invalid identificacion type</value>
+  </data>
+  <data name="Regentes.NoEncontrados" xml:space="preserve">
+    <value>Regents not found</value>
+  </data>
+  <data name="ValidacionCodigo" xml:space="preserve">
+    <value>The code must be between 1 and 999999999</value>
+  </data>
+  <data name="ValidacionCodigo25" xml:space="preserve">
+    <value>The code must have a maximum of 25 characters</value>
+  </data>
+  <data name="ValidacionCodigo35" xml:space="preserve">
+    <value>The code must have a maximum of 35 characters</value>
+  </data>
+  <data name="ValidacionCodigoA2" xml:space="preserve">
+    <value>The A2 code must have exactly 2 characters from A to Z</value>
+  </data>
+  <data name="ValidacionCodigoC3" xml:space="preserve">
+    <value>The C3 code must have exactly 3 characters from A to Z</value>
+  </data>
+  <data name="ValidacionCodigoNumerico" xml:space="preserve">
+    <value>The numeric code must have exactly 3 numbers</value>
+  </data>
+  <data name="ValidacionFicheroImportar" xml:space="preserve">
+    <value>Error importing file, make sure the format is valid</value>
+  </data>
+  <data name="ValidacionIdTipoIdentificacion" xml:space="preserve">
+    <value>The identification type id must be between 1 and 999999999</value>
+  </data>
+  <data name="ValidacionIdVariedad" xml:space="preserve">
+    <value>The variety id must be between 1 and 999999999</value>
+  </data>
+  <data name="ValidacionNombreISO" xml:space="preserve">
+    <value>The iso name must have a maximum of 100 characters</value>
+  </data>
+  <data name="ValidacionNoticiasLink" xml:space="preserve">
+    <value>The link must have a maximum of 250 characters</value>
+  </data>
+  <data name="ValidacionNumeroIdentificacion" xml:space="preserve">
+    <value>The identification number format is incorrect</value>
+  </data>
+  <data name="ValidacionRequeridosNulos" xml:space="preserve">
+    <value>Null values ​​were entered in required fields or incorrect values</value>
+  </data>
+  <data name="Variedad.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must be greater than 0 and a maximum of 17 characters.</value>
+  </data>
+  <data name="Variedad.DatosDuplicados" xml:space="preserve">
+    <value>There is already a variety with the data provided</value>
+  </data>
+  <data name="Variedad.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Variedad.NoEncontrada" xml:space="preserve">
+    <value>Variety not found</value>
+  </data>
+  <data name="Variedad.NombreInvalido" xml:space="preserve">
+    <value>The name is a required field, it must be greater than 0 and a maximum of 100 characters.</value>
+  </data>
+  <data name="Variedad.VariedadesRelacionCultivo" xml:space="preserve">
+    <value>At least a variety you want to delete is assigned to a crop</value>
+  </data>
+  <data name="Variedad.VariedadLongitudNombre" xml:space="preserve">
+    <value>The length of the variety name must be between 1 and 100 characters</value>
+  </data>
+  <data name="Variedad.VariedadRelacionCultivo" xml:space="preserve">
+    <value>The variety you want to delete is assigned to a crop</value>
+  </data>
+  <data name="Pais.ValidacionNombre" xml:space="preserve">
+    <value>Country name length must be between 1 and 100 characters</value>
+  </data>
+  <data name="NoticiasVuce.NoticiasLinkInvalido" xml:space="preserve">
+    <value>The link must be a valid URL</value>
+  </data>
+  <data name="MensajeTraza" xml:space="preserve">
+    <value>An unexpected error has occurred, try again later. If the problem persists, contact the support service indicating the error code</value>
+  </data>
+  <data name="TipoIdentificacionFisicaComienza0" xml:space="preserve">
+    <value>The identification number must not begin with 0</value>
+  </data>
+  <data name="ExcepcionMorosidad.NoEncontrada" xml:space="preserve">
+    <value>Late payment exception not found</value>
+  </data>
+  <data name="Moneda.NoEncontrada" xml:space="preserve">
+    <value>Currency not found</value>
+  </data>
+  <data name="Tarifa.NoEncontrada" xml:space="preserve">
+    <value>Fee not found</value>
+  </data>
+  <data name="ExcepcionMorosidad.NumeroIdentificacionExcedeLimite" xml:space="preserve">
+    <value>The identification number format is incorrect</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoIdentificacionFisicaComienza0" xml:space="preserve">
+    <value>The identificacion number cannot begin with 0</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>The identification type is not valid</value>
+  </data>
+  <data name="EstadoExcepcionMorosidad.NoEncontrado" xml:space="preserve">
+    <value>State of exception for late payment not found</value>
+  </data>
+  <data name="TipoAccionExcepcionMorosidad.NoEncontrado" xml:space="preserve">
+    <value>Type of action exception default not found</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioMayorIgualFechaVencimiento" xml:space="preserve">
+    <value>The start date must be less than the expiration date</value>
+  </data>
+  <data name="Categoria.NoEncontrada" xml:space="preserve">
+    <value>Category not found</value>
+  </data>
+  <data name="Categoria.DatosDuplicados" xml:space="preserve">
+    <value>A merchandise category with the data provided already exists</value>
+  </data>
+  <data name="Categoria.NombreInvalido" xml:space="preserve">
+    <value>The merchandise category field is required, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Sector.DatosDuplicados" xml:space="preserve">
+    <value>A sector already exists with the data provided</value>
+  </data>
+  <data name="Sector.NoEncontrado" xml:space="preserve">
+    <value>Sector not found</value>
+  </data>
+  <data name="Sector.NombreInvalido" xml:space="preserve">
+    <value>The sector is a required field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="Provincia.NoEncontrada" xml:space="preserve">
+    <value>Province not found</value>
+  </data>
+  <data name="Provincia.DatosDuplicados" xml:space="preserve">
+    <value>A province with the data provided already exists</value>
+  </data>
+  <data name="Caracteristica.NoEncontrada" xml:space="preserve">
+    <value>Characteristic not found</value>
+  </data>
+  <data name="Caracteristica.DatosDuplicados" xml:space="preserve">
+    <value>A characteristic with the data provided alredy exists</value>
+  </data>
+  <data name="Caracteristica.NombreInvalido" xml:space="preserve">
+    <value>Characteristic is a required field, it must have a size greater than 0 and a maximum of 150 characters</value>
+  </data>
+  <data name="Caracteristica.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>An error ocurred requesting the institutions</value>
+  </data>
+  <data name="Caracteristica.IntitucionNoEncontrada" xml:space="preserve">
+    <value>Institution not found</value>
+  </data>
+  <data name="Familia.NoEncontrada" xml:space="preserve">
+    <value>Family not found</value>
+  </data>
+  <data name="Familia.DatosDuplicados" xml:space="preserve">
+    <value>A family with the data provided already exists</value>
+  </data>
+  <data name="Familia.NombreInvalido" xml:space="preserve">
+    <value>The family is a required field, it must have a size greater than 0 and a maximum of 50 characters.</value>
+  </data>
+  <data name="BloqueComercial.NoEncontrada" xml:space="preserve">
+    <value>Trade block not found</value>
+  </data>
+  <data name="BloqueComercial.DatosDuplicados" xml:space="preserve">
+    <value>A trade block with the data provided already exists</value>
+  </data>
+  <data name="TipoProducto.NoEncontrado" xml:space="preserve">
+    <value>Product type not found</value>
+  </data>
+  <data name="TipoProducto.DatosDuplicados" xml:space="preserve">
+    <value>A product type with the data provided alrady exists</value>
+  </data>
+  <data name="Sustancia.NoEncontrada" xml:space="preserve">
+    <value>Substance not found</value>
+  </data>
+  <data name="ExcepcionMorosidad.EliminacionNoPermitida" xml:space="preserve">
+    <value>Deletion not allowed due to incorrect status</value>
+  </data>
+  <data name="Sustancia.DatosDuplicados" xml:space="preserve">
+    <value>A substance with the data provided already exists</value>
+  </data>
+  <data name="Sustancia.NombreInvalido" xml:space="preserve">
+    <value>The name is a required field, it must have a size greater than 0 and a maximum of 300 characters</value>
+  </data>
+  <data name="Sustancia.CasInvalido" xml:space="preserve">
+    <value>The CAS number is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Distrito.DatosDuplicados" xml:space="preserve">
+    <value>A district with the data provided already exists</value>
+  </data>
+  <data name="Distrito.NoEncontrado" xml:space="preserve">
+    <value>District not found</value>
+  </data>
+  <data name="Distrito.NombreInvalido" xml:space="preserve">
+    <value>The district is a required field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="Sustancia.ListaCaqInvalido" xml:space="preserve">
+    <value>The CAQ list is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Requisito.DatosDuplicados" xml:space="preserve">
+    <value>A requirement with the provided information already exists</value>
+  </data>
+  <data name="Requisito.DescripcionInvalida" xml:space="preserve">
+    <value>The description is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="Requisito.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Failed to obtain institutions</value>
+  </data>
+  <data name="Requisito.IntitucionNoEncontrada" xml:space="preserve">
+    <value>Institution not found</value>
+  </data>
+  <data name="Requisito.NoEncontrado" xml:space="preserve">
+    <value>Requirement not found</value>
+  </data>
+  <data name="Familia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Barrio.DatosDuplicados" xml:space="preserve">
+    <value>A neighborhood with the data provided already exists</value>
+  </data>
+  <data name="Barrio.DistritoNoActualizable" xml:space="preserve">
+    <value>The district field is not updateable</value>
+  </data>
+  <data name="Barrio.NoEncontrado" xml:space="preserve">
+    <value>Neighborhood not found</value>
+  </data>
+  <data name="Barrio.NombreInvalido" xml:space="preserve">
+    <value>The neighborhood is a required field, it must have a size greater than 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.DatosDuplicados" xml:space="preserve">
+    <value>A characteristic of type product with the data provided already exists</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.NoEncontrada" xml:space="preserve">
+    <value>Characteristic type product not found</value>
+  </data>
+  <data name="BloqueComercial.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="BloqueComercial.NombreInvalido" xml:space="preserve">
+    <value>Trade block is a required field, it must have a size greater than 0 and a maximum of 300 characters</value>
+  </data>
+  <data name="Provincia.CantonesRelacionados" xml:space="preserve">
+    <value>There are cantons related to the province</value>
+  </data>
+  <data name="Provincia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Provincia.NombreInvalido" xml:space="preserve">
+    <value>The province is a requeried field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="ProductoRequisito.NoEncontrada" xml:space="preserve">
+    <value>Product request not found</value>
+  </data>
+  <data name="Categoria.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Sustancia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="PaisBloqueComercial.DatosDuplicados" xml:space="preserve">
+    <value>A trading block country already exists with the data provided</value>
+  </data>
+  <data name="PaisBloqueComercial.NoEncontrada" xml:space="preserve">
+    <value>Trading block country not found</value>
+  </data>
+  <data name="PaisBloqueComercial.PaisNoEncontrado" xml:space="preserve">
+    <value>Country not found</value>
+  </data>
+  <data name="PaisBloqueComercial.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>The file contains a repeated country</value>
+  </data>
+  <data name="Canton.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Canton.DistritosRelacionados" xml:space="preserve">
+    <value>There are districts related to the canton</value>
+  </data>
+  <data name="Canton.NombreInvalido" xml:space="preserve">
+    <value>The canton is a required field, it must have a size greater than 0 and a maximun of 50 characters</value>
+  </data>
+  <data name="Canton.ProvinciaInexistente" xml:space="preserve">
+    <value>Non-existent province</value>
+  </data>
+  <data name="Distrito.BarriosRelacionados" xml:space="preserve">
+    <value>There is a district with related neighborhoods</value>
+  </data>
+  <data name="Distrito.CantonInexistente" xml:space="preserve">
+    <value>Non-existent canton</value>
+  </data>
+  <data name="Distrito.CantonNoActualizable" xml:space="preserve">
+    <value>The canton field is not updateable</value>
+  </data>
+  <data name="Distrito.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="SustanciaControlada.DatosDuplicados" xml:space="preserve">
+    <value>A controlled substance already exists with the data provided</value>
+  </data>
+  <data name="SustanciaControlada.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="SustanciaControlada.FamiliaNoEncontrada" xml:space="preserve">
+    <value>Controlled substance family no found</value>
+  </data>
+  <data name="SustanciaControlada.NoEncontrada" xml:space="preserve">
+    <value>Controlled substance not found</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.CaracteristicaNoEncontrada" xml:space="preserve">
+    <value>Characteristic not found</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="Barrio.CantonInexistente" xml:space="preserve">
+    <value>Non-existent canton</value>
+  </data>
+  <data name="Barrio.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="Barrio.DistritoInexistente" xml:space="preserve">
+    <value>Non-existent district</value>
+  </data>
+  <data name="Barrio.ProvinciaInexistente" xml:space="preserve">
+    <value>Non-existent province</value>
+  </data>
+  <data name="Distrito.ProvinciaInexistente" xml:space="preserve">
+    <value>Non-existent province</value>
+  </data>
+  <data name="SustanciaControlada.ClasificacionArancelariaTamano" xml:space="preserve">
+    <value>The tariff classification is a required field, must be larger than 0 and have a maximum of 100 characters</value>
+  </data>
+  <data name="SustanciaControlada.ClasificacionAshraeTamano" xml:space="preserve">
+    <value>The ashrae classification is a required field, must be larger than 0 and have a maximum of 100 characters</value>
+  </data>
+  <data name="SustanciaControlada.PotencialCalentamientoGlobalTamano" xml:space="preserve">
+    <value>Global warming potential is a required field, it must have a length greater than 0 and no more than 50 characters</value>
+  </data>
+  <data name="TipoProducto.CaracteristicaRelacionadas" xml:space="preserve">
+    <value>There is a characteristic associated with another institution</value>
+  </data>
+  <data name="TipoProducto.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="TipoProducto.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Fails to get institution</value>
+  </data>
+  <data name="TipoProducto.InstitucionNoEncontrado" xml:space="preserve">
+    <value>Institution is not DCA or DIPOA</value>
+  </data>
+  <data name="TipoProducto.InstitucionNoValida" xml:space="preserve">
+    <value>Invalid institutions</value>
+  </data>
+  <data name="TipoProducto.ProductoRequisitoExiste" xml:space="preserve">
+    <value>There are related requirements product type</value>
+  </data>
+  <data name="TipoProducto.TipoTamano" xml:space="preserve">
+    <value>A type is a required field, it must have a size greater than 0 and a maximum of 200 characters</value>
+  </data>
+  <data name="Familia.SustanciasControladasRelacionadas" xml:space="preserve">
+    <value>The family(ies) have related controlled substances</value>
+  </data>
+  <data name="Provincia.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 1 character</value>
+  </data>
+  <data name="Canton.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 3 characters</value>
+  </data>
+  <data name="Canton.ProvinciaNoActualizable" xml:space="preserve">
+    <value>The province field is not updateable</value>
+  </data>
+  <data name="Barrio.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 7 characters</value>
+  </data>
+  <data name="Distrito.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 5 characters</value>
+  </data>
+  <data name="Canton.DatosDuplicados" xml:space="preserve">
+    <value>A canton with the data provided already exists</value>
+  </data>
+  <data name="Categoria.CategoriaInstitucionInvalida" xml:space="preserve">
+    <value>Institution is not DCA or DIPOA</value>
+  </data>
+  <data name="Categoria.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Failed to obtain Institutions</value>
+  </data>
+  <data name="Categoria.InstitucionNoEncontrado" xml:space="preserve">
+    <value>Institution not found</value>
+  </data>
+  <data name="Categoria.ProductoRequisitoRelacionado" xml:space="preserve">
+    <value>There is a related product requirement</value>
+  </data>
+  <data name="Categoria.TipoProductoRelacionado" xml:space="preserve">
+    <value>There are related product type categories</value>
+  </data>
+  <data name="Requisito.RequisitoCodigoTamano" xml:space="preserve">
+    <value>The code must have a maximum of 50 characters</value>
+  </data>
+  <data name="Requisito.RequisitoDescripcionTamano" xml:space="preserve">
+    <value>The description is a required field, it must have a size greater than 0 and a maximum of 300 characters</value>
+  </data>
+  <data name="Requisito.RequisitoInstitucionInvalida" xml:space="preserve">
+    <value>Invalid institution</value>
+  </data>
+  <data name="Requisito.RequisitoVersionTamano" xml:space="preserve">
+    <value>The version must have a maximum of 10 characters</value>
+  </data>
+  <data name="ProductoRequisito.RequisitoNoEncontrado" xml:space="preserve">
+    <value>Requirement not found</value>
+  </data>
+  <data name="TipoProducto.CategoriaNoEncontrado" xml:space="preserve">
+    <value>Category not found</value>
+  </data>
+  <data name="Sector.CodigoInvalido" xml:space="preserve">
+    <value>The code is a required field, it must have a size greater than 0 and a maximum of 10 characters</value>
+  </data>
+  <data name="Establecimiento.ActividadPrimariaInvalido" xml:space="preserve">
+    <value>The parent activity is required and must be no longer than 50 characters</value>
+  </data>
+  <data name="Establecimiento.ActividadSecundariaInvalido" xml:space="preserve">
+    <value>The secondary activity is required and must be no longer than 50 characters</value>
+  </data>
+  <data name="Establecimiento.CantonInvalido" xml:space="preserve">
+    <value>The canton is required and must be no longer than 50 characters</value>
+  </data>
+  <data name="Establecimiento.DatosDuplicados" xml:space="preserve">
+    <value>A facility already exists with the data provided</value>
+  </data>
+  <data name="Establecimiento.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="Establecimiento.DireccionExactaInvalido" xml:space="preserve">
+    <value>Address is a required field, it must have a size greater than 0 and a maximum of 250 characters</value>
+  </data>
+  <data name="Establecimiento.DistritoInvalido" xml:space="preserve">
+    <value>The district is required and must be no longer than 50 characters</value>
+  </data>
+  <data name="Establecimiento.EstablecimientoExiste" xml:space="preserve">
+    <value>A establishment with the data provided already exists</value>
+  </data>
+  <data name="Establecimiento.FechaVencimientoMenorHoy" xml:space="preserve">
+    <value>The expiration date is a required field and must be a date equal to or later than today</value>
+  </data>
+  <data name="Establecimiento.NoEncontrado" xml:space="preserve">
+    <value>Establishment not found</value>
+  </data>
+  <data name="Establecimiento.NombreEstablecimientoInvalido" xml:space="preserve">
+    <value>The name of the establishment is a required field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="Establecimiento.NumeroCvoInvalido" xml:space="preserve">
+    <value>The CVO number is required and must be no longer than 15 characters</value>
+  </data>
+  <data name="Establecimiento.ProvinciaInvalido" xml:space="preserve">
+    <value>The province is required and must be no longer than 50 characters</value>
+  </data>
+  <data name="Caracteristica.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There is duplicate data in the imported file</value>
+  </data>
+  <data name="Canton.NoEncontrado" xml:space="preserve">
+    <value>Canton not found</value>
+  </data>
+  <data name="Caracteristica.CaracteristicaInstitucionInvalida" xml:space="preserve">
+    <value>Institution is not DCA or DIPOA</value>
+  </data>
+  <data name="Caracteristica.TipoProductoRelacionado" xml:space="preserve">
+    <value>There are related product type characteristics</value>
+  </data>
+  <data name="Sector.DatosDuplicadosArchivos" xml:space="preserve">
+    <value>Duplicated data in the imported file</value>
+  </data>
+  <data name="Pais.PerteneceBloqueComercial" xml:space="preserve">
+    <value>The country you wish to delete belongs to a trading block</value>
+  </data>
+  <data name="Requisito.RequisitoImagenObligatoria" xml:space="preserve">
+    <value>The image is a required field, it must have a size greater than 0</value>
+  </data>
+  <data name="Requisito.RequisitoNombreImagen" xml:space="preserve">
+    <value>The image name is a required field, it must have a size greater than 0 and a maximum of 100 characters.</value>
+  </data>
+  <data name="Establecimiento.EstadoEstablecimientoInvalido" xml:space="preserve">
+    <value>The status is required and must be no longer than 20 characters</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteNTRegimen" xml:space="preserve">
+    <value>If the type of procedure is a technical note, it is mandatory to enter the regime</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteRegimen" xml:space="preserve">
+    <value>If the type of procedure is different from a technical note, the regime should not be entered.</value>
+  </data>
+  <data name="ExcepcionMorosidad.NombreEmpresaInvalido" xml:space="preserve">
+    <value>The company name is a required field, it must have a size greater tahn 0 and a maximum of 100 characters</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioMenorAlDia" xml:space="preserve">
+    <value>The start date is a required field, it must be a date greater than or equal to today</value>
+  </data>
+  <data name="ExcepcionMorosidad.ObservacionesInvalidas" xml:space="preserve">
+    <value>The observations is a required field, it must have a size greater tahn 0 and a maximum of 250 characters</value>
+  </data>
+  <data name="ExcepcionMorosidad.DatosDuplicados" xml:space="preserve">
+    <value>A late payment exception with the data provided already exists</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteInvalido" xml:space="preserve">
+    <value>Process not found</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoAccionInvalido" xml:space="preserve">
+    <value>The action type is not valid</value>
+  </data>
+  <data name="ExcepcionMorosidad.SubTipoTramiteInvalido" xml:space="preserve">
+    <value>The procedure type is not valid</value>
+  </data>
+  <data name="ProductoRequisito.Duplicados" xml:space="preserve">
+    <value>A requirement product with the provided information already exists</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaVencimientoInvalida" xml:space="preserve">
+    <value>The expiration date must be a date greater than or equal to today</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioInvalida" xml:space="preserve">
+    <value>The start date is a required field, it must be a date greater than or equal to today</value>
+  </data>
+  <data name="SustanciaControlada.TipoGasTamano" xml:space="preserve">
+    <value>The gas type is a required field, must be larger than 0 and have a maximum of 100 characters</value>
+  </data>
+  <data name="Pais.PerteneceRequisito" xml:space="preserve">
+    <value>The country you wish to delete is associated with a requirement</value>
+  </data>
+  <data name="TipoProducto.CategoriaInstitucion" xml:space="preserve">
+    <value>Category does not belong to the institution</value>
+  </data>
+  <data name="ProductoRequisito.TipoProductoInstitucion" xml:space="preserve">
+    <value>Product type does not belong to the institution</value>
+  </data>
+  <data name="ProductoRequisito.TipoProductoNoEncontrada" xml:space="preserve">
+    <value>Type not found</value>
+  </data>
+  <data name="PaisBloqueComercial.BloqueComercialNoEncontrado" xml:space="preserve">
+    <value>Trading block not found</value>
+  </data>
+  <data name="TipoProducto.CategoriaPerteneceAOtraInstitucion" xml:space="preserve">
+    <value>Category does not belong to the institution</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.CaracteristicaNoPerteneceInstitucion" xml:space="preserve">
+    <value>Characteristic does not belong to the institution</value>
+  </data>
+  <data name="ProductoRequisito.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="Provincia.ProvinciaRelacionCanton" xml:space="preserve">
+    <value>There are cantons related to the province</value>
+  </data>
+  <data name="Requisito.RequisitoTieneProductosAsociados" xml:space="preserve">
+    <value>There is a product type associated with another institution</value>
+  </data>
+  <data name="Productos.DatosDuplicados" xml:space="preserve">
+    <value>A product with the provided data already exists</value>
+  </data>
+  <data name="Productos.TamanoClase" xml:space="preserve">
+    <value>The class is a required field, it must have a size greater than 0 and a maximum of 20 characters</value>
+  </data>
+  <data name="Productos.TamanoPresentacion" xml:space="preserve">
+    <value>The presentation is a required field, it must have a size greater than 0 and a maximum of 20 characters</value>
+  </data>
+  <data name="Productos.NombreComunInvalido" xml:space="preserve">
+    <value>The common name is a required field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="Productos.TamanoNombreCientifico" xml:space="preserve">
+    <value>The scientific name is a required field, it must have a size greater than 0 and a maximum of 50 characters</value>
+  </data>
+  <data name="Productos.NoEncontrado" xml:space="preserve">
+    <value>Product not found</value>
+  </data>
+  <data name="Productos.DatosDuplicadosArchivos" xml:space="preserve">
+    <value>There are duplicate data in the file</value>
+  </data>
+  <data name="ExcepcionMorosidad.DatosArchivoImportarInvalido" xml:space="preserve">
+    <value>Import a valid file to continue</value>
+  </data>
+  <data name="FalloServicioTramites" xml:space="preserve">
+    <value>Failure to query the procedure service</value>
+  </data>
+</root>

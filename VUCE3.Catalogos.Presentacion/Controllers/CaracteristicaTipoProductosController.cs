@@ -1,0 +1,203 @@
+﻿using AutoMapper;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Deltas;
+using Microsoft.AspNetCore.OData.Formatter;
+using Microsoft.AspNetCore.OData.Query;
+using VUCE3.Catalogos.Presentacion.DTO;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Queries.ObtenerCaracteristicaTipoProductos;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.EditarCaracteristicaTipoProducto;
+using VUCE3.Catalogos.Dominio.Entidades;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Queries.ObtenerCaracteristicaTipoProductosPorId;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.CrearCaracteristicaTipoProducto;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.EliminarCaracteristicaTipoProducto;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.EliminarCaracteristicaTipoProductos;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.ImportarDatos;
+using VUCE3.Catalogos.Aplicacion.CaracteristicaTipoProducto.Commands.ImportarDatos.DTO;
+
+using Microsoft.Extensions.Localization;
+using VUCE3.Catalogos.Presentacion.Resources;
+using VUCE3.Catalogos.Presentacion.Validadores;
+using ErrorOr;
+using VUCE3.Catalogos.Aplicacion.Familia.Commands.EliminarFamilias;
+
+
+namespace VUCE3.Catalogos.Presentacion.Controllers
+{
+    public class CaracteristicaTipoProductosController : ODataControllerBase
+    {
+        private readonly ISender _mediator;
+        private readonly IMapper _mapper;
+
+        public CaracteristicaTipoProductosController(ISender mediator, IMapper mapper, IStringLocalizer<ILocalization> localizer) : base(localizer)
+        {
+            _mediator = mediator;
+            _mapper = mapper;
+        }
+
+        [EnableQuery]
+        public async Task<IActionResult> Get()
+        {
+            var query = new ObtenerCaracteristicaTipoProductoQuery()
+            {
+            };
+
+            var result = await _mediator.Send(query);
+
+            return result.Match(
+                        familias => Ok(_mapper.Map<List<CaracteristicaTipoProductoDto>>(familias)),
+                        errors => Problem(errors));
+        }
+
+        [EnableQuery]
+        public async Task<IActionResult> Get(int key)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+
+            var query = new ObtenerCaracteristicaTipoProductoPorIdQuery()
+            {
+                IdCaracteristicaTipoProducto = key
+            };
+
+            var result = await _mediator.Send(query);
+
+            return result.Match(
+              result => Ok(_mapper.Map<CaracteristicaTipoProductoDto>(result)),
+              errors => Problem(errors));
+        }
+
+        public async Task<IActionResult> Post([FromBody] CaracteristicaTipoProductoDto familiaDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+
+            var command = new CrearCaracteristicaTipoProductoCommand()
+            {
+                CaracteristicaTipoProducto = _mapper.Map<CaracteristicaTipoProducto>(familiaDto)
+            };
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                        result => Created(_mapper.Map<CaracteristicaTipoProductoDto>(result)),
+                        errors => Problem(errors));
+        }
+
+        public async Task<IActionResult> Patch([FromODataUri] int key, Delta<CaracteristicaTipoProductoDto> deltaDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+            var resultDto = new CaracteristicaTipoProductoDto();
+            deltaDto.Patch(resultDto);
+            var listaCambios = deltaDto.GetChangedPropertyNames().ToList();
+            var result = _mapper.Map<CaracteristicaTipoProducto>(resultDto);
+
+            var command = new EditarCaracteristicaTipoProductoCommand()
+            {
+                IdCaracteristicaTipoProducto = key,
+                CaracteristicaTipoProducto = result,
+                ListaCambios = listaCambios
+            };
+
+            var resultUpdate = await _mediator.Send(command);
+
+            return resultUpdate.Match(
+                updated => Ok(new Tuple<CaracteristicaTipoProductoDto, CaracteristicaTipoProductoDto>(_mapper.Map<CaracteristicaTipoProductoDto>(updated.Item1),
+                _mapper.Map<CaracteristicaTipoProductoDto>(updated.Item2))),
+                errors => Problem(errors));
+        }
+
+        public async Task<IActionResult> Delete([FromODataUri] int key)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+
+            var command = new EliminarCaracteristicaTipoProductoCommand()
+            {
+                Id = key
+            };
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                deleted => Ok(_mapper.Map<CaracteristicaTipoProductoDto>(deleted)),
+                errors => Problem(errors));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ImportarDatos(ODataActionParameters param)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+
+            var modo = (int)param["modo"];
+
+            IEnumerable<ImportarCaracteristicaTipoProductoDto> temp = (IEnumerable<ImportarCaracteristicaTipoProductoDto>)param["datos"];
+
+            List<ImportarCaracteristicaTipoProductoDto> datos;
+            try
+            {
+                datos = temp.ToList();
+            }
+            catch (Exception)
+            {
+                return EstructuraArchivoImportacionInvalido();
+            }
+
+            var command = new ImportarDatosCommand()
+            {
+                Modo = modo,
+                Datos = datos.Select(x => new ImportarCaracteristicaTipoProductoCommandDto()
+                { 
+                    Caracteristica = x.Caracteristica ,
+                    IdTipoProducto = x.IdTipoProducto
+                })
+            };
+
+            var result = await _mediator.Send(command);
+
+            return result.Match(
+                deleted => Created(),
+                errors => Problem(errors));
+        }
+        [HttpPost]
+        public async Task<IActionResult> BorradoMasivo(ODataActionParameters param)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(x => x.Errors).Select(x => Error.Validation(description: x.Exception?.Message ?? x.ErrorMessage)).ToList();
+                return Problem(errors, false);
+            }
+
+            var items = param["items"] as IEnumerable<int>;
+
+            var command = new EliminarCaracteristicaTipoProductosCommand()
+            {
+               IdsCaracteristicaTipoProductos = items ?? []
+            };
+
+            var resultImportarFamilia = await _mediator.Send(command);
+
+            return resultImportarFamilia.Match(
+                deleted => NoContent(),
+                errors => Problem(errors));
+
+        }
+    }
+}

@@ -1,0 +1,14 @@
+listar paquetes
+dotnet tool list --global
+ 
+instalar dotnet-ef
+dotnet tool install --global dotnet-ef
+ 
+actualizar dotnet-ef
+dotnet tool update --global dotnet-ef
+ 
+crear migracion
+dotnet-ef migrations add NombreMigracion -p VUCE3.Catalogos.Infraestructura -s VUCE3.Catalogos.Presentacion
+ 
+actualizar base de datos
+dotnet-ef database update -p VUCE3.Catalogos.Infraestructura -s VUCE3.Catalogos.Presentacion

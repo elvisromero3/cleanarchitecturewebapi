@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Aduana.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una aduana con los datos proporcionados</value>
+  </data>
+  <data name="Aduana.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Aduana.ExisteInstitucionesAutorizadas" xml:space="preserve">
+    <value>La aduana se encuentra asignada a una institucion autorizada</value>
+  </data>
+  <data name="Aduana.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Fallo al obtener InstitucionesAutorizadas</value>
+  </data>
+  <data name="Aduana.NoEncontrada" xml:space="preserve">
+    <value>Aduana no encontrada</value>
+  </data>
+  <data name="Aduana.NombreInvalido" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Casa.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 17 caracteres</value>
+  </data>
+  <data name="Casa.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una casa con los datos proporcionados</value>
+  </data>
+  <data name="Casa.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Casa.NoEncontrada" xml:space="preserve">
+    <value>Casa no encontrada</value>
+  </data>
+  <data name="Casa.NombreInvalido" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Catalogo.NoEncontrado" xml:space="preserve">
+    <value>Catálogo no encontrado</value>
+  </data>
+  <data name="Cliente.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un cliente con los datos proporcionados</value>
+  </data>
+  <data name="Cliente.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Cliente.Existe" xml:space="preserve">
+    <value>Ya existe un cliente con los datos proporcionados</value>
+  </data>
+  <data name="Cliente.FalloServicioRegistro" xml:space="preserve">
+    <value>Fallo al obtener Tipo Identificadores</value>
+  </data>
+  <data name="Cliente.FechaVencimientoMenorHoy" xml:space="preserve">
+    <value>La fecha de vencimiento debe ser mayor al día de hoy</value>
+  </data>
+  <data name="Cliente.NoEncontrado" xml:space="preserve">
+    <value>Cliente no encontrado</value>
+  </data>
+  <data name="Cliente.TamanoCodigoCliente" xml:space="preserve">
+    <value>El código de cliente es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 35 caracteres</value>
+  </data>
+  <data name="Cliente.TamanoNombreCliente" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Cliente.TamanoNroIdentificacion" xml:space="preserve">
+    <value>El formato del número de identificación no es correcto</value>
+  </data>
+  <data name="Cliente.tipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>Tipo Identificacion no encontrado</value>
+  </data>
+  <data name="Cultivo.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 25 caracteres</value>
+  </data>
+  <data name="Cultivo.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un cultivo con los datos proporcionados</value>
+  </data>
+  <data name="Cultivo.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Cultivo.IdVariedadInvalido" xml:space="preserve">
+    <value>El identificador de variedad es un campo requerido y su valor debe ser mayor a 0</value>
+  </data>
+  <data name="Cultivo.NoEncontrado" xml:space="preserve">
+    <value>Cultivo no encontrado</value>
+  </data>
+  <data name="Cultivo.NombreCientificoInvalido" xml:space="preserve">
+    <value>El nombre científico es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Cultivo.NombreInvalido" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Empresa.NoEncontrada" xml:space="preserve">
+    <value>Empresa no encontrada</value>
+  </data>
+  <data name="Empresa.NombreExcedeLimite" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Empresas.CodigoExcedeLimite" xml:space="preserve">
+    <value>El código es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 12 caracteres</value>
+  </data>
+  <data name="Empresas.DatosDuplicados" xml:space="preserve">
+    <value>Empresa asociada al regente ya existe</value>
+  </data>
+  <data name="Empresas.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Empresas.FalloServicioRegistro" xml:space="preserve">
+    <value>Fallo al obtener Tipo Identificadores</value>
+  </data>
+  <data name="Empresas.IdProfesionalInvalido" xml:space="preserve">
+    <value>El identificador de profesional es un campo requerido y su valor debe ser mayor a 0</value>
+  </data>
+  <data name="Empresas.NoEncontradas" xml:space="preserve">
+    <value>Empresas no encontradas</value>
+  </data>
+  <data name="Empresas.tipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>Tipo Identificacion no encontrado</value>
+  </data>
+  <data name="ErrorControler.GeneralError" xml:space="preserve">
+    <value>Se ha producido un error en el servidor. Por favor, inténtelo de nuevo más tarde.</value>
+  </data>
+  <data name="General.Conflict" xml:space="preserve">
+    <value>Se ha producido un error de conflicto.</value>
+  </data>
+  <data name="General.Failure" xml:space="preserve">
+    <value>Ha ocurrido un fallo</value>
+  </data>
+  <data name="General.Forbidden" xml:space="preserve">
+    <value>Se ha producido un error "Prohibido".</value>
+  </data>
+  <data name="General.NotFound" xml:space="preserve">
+    <value>Se ha producido un error "No encontrado".</value>
+  </data>
+  <data name="General.Unauthorized" xml:space="preserve">
+    <value>Se ha producido un error "No autorizado".</value>
+  </data>
+  <data name="General.Validation" xml:space="preserve">
+    <value>Se ha producido un error de validación.</value>
+  </data>
+  <data name="Imagen.NoEncontrada" xml:space="preserve">
+    <value>Imagen no encontrada</value>
+  </data>
+  <data name="NoticiasVuce.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una noticia con los datos proporcionados</value>
+  </data>
+  <data name="NoticiasVuce.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="NoticiasVuce.NoEncontrada" xml:space="preserve">
+    <value>Noticia no encontrada</value>
+  </data>
+  <data name="Pais.CodigoA2Duplicado" xml:space="preserve">
+    <value>Ya existe un país con uno de los datos proporcionados (Código A2)</value>
+  </data>
+  <data name="Pais.CodigoC3Duplicado" xml:space="preserve">
+    <value>Ya existe un país con uno de los datos proporcionados (Código C3)</value>
+  </data>
+  <data name="Pais.CodigoNumericoDuplicado" xml:space="preserve">
+    <value>Ya existe un país con uno de los datos proporcionados (Código numérico)</value>
+  </data>
+  <data name="NoticiasVuce.TextoInglesInvalido" xml:space="preserve">
+    <value>El texto en inglés de noticias VUCE es un campo requerido y su tamaño debe ser mayor a 0</value>
+  </data>
+  <data name="NoticiasVuce.TextoInvalido" xml:space="preserve">
+    <value>El texto de noticias VUCE es un campo requerido y su tamaño debe ser mayor a 0</value>
+  </data>
+  <data name="NoticiasVuce.TituloInglesInvalido" xml:space="preserve">
+    <value>El título en ingles de noticias VUCE es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="NoticiasVuce.TituloInvalido" xml:space="preserve">
+    <value>El título de noticias VUCE es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Pais.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un país con los datos proporcionados</value>
+  </data>
+  <data name="Pais.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Pais.NoEncontrado" xml:space="preserve">
+    <value>Pais no encontrado</value>
+  </data>
+  <data name="Pais.NombreDuplicado" xml:space="preserve">
+    <value>Ya existe un país con uno de los datos proporcionados (Nombre)</value>
+  </data>
+  <data name="Regente.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un regente con los datos proporcionados</value>
+  </data>
+  <data name="Regente.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Regente.EmailInvalido" xml:space="preserve">
+    <value>Email inválido</value>
+  </data>
+  <data name="Regente.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Falló al obtener Instituciones</value>
+  </data>
+  <data name="Regente.IdInstitucionInvalido" xml:space="preserve">
+    <value>El identificador de institución es un campo requerido y su valor debe ser mayor a 0</value>
+  </data>
+  <data name="Regente.IntitucionNoEncontrado" xml:space="preserve">
+    <value>Institución no encontrada</value>
+  </data>
+  <data name="Regente.NoEncontrado" xml:space="preserve">
+    <value>Regente no encontrado</value>
+  </data>
+  <data name="Regente.TamanoCodigoRegente" xml:space="preserve">
+    <value>El código de regente debe tener un tamaño mayor a 0 y un máximo de 20 caracteres</value>
+  </data>
+  <data name="Regente.TamanoEmail" xml:space="preserve">
+    <value>Email debe tener un máximo de 100 caracteres</value>
+  </data>
+  <data name="Regente.TamanoNombre" xml:space="preserve">
+    <value>El nombre es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Regente.TamanoNroIdentificacion" xml:space="preserve">
+    <value>El formato del número de identificación no es correcto</value>
+  </data>
+  <data name="Regente.TamanoProfesion" xml:space="preserve">
+    <value>La profesión es un campo requerido, su tamaño debe ser mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Regente.TipoIdentificacionIncorrecta" xml:space="preserve">
+    <value>Tipo de identificación inválida</value>
+  </data>
+  <data name="Regentes.NoEncontrados" xml:space="preserve">
+    <value>Regentes no encontrados</value>
+  </data>
+  <data name="ValidacionCodigo" xml:space="preserve">
+    <value>El código debe estar entre 1 y 999999999</value>
+  </data>
+  <data name="ValidacionCodigo25" xml:space="preserve">
+    <value>El código debe tener máximo 25 caracteres</value>
+  </data>
+  <data name="ValidacionCodigo35" xml:space="preserve">
+    <value>El código debe tener máximo 35 caracteres</value>
+  </data>
+  <data name="ValidacionCodigoA2" xml:space="preserve">
+    <value>El código A2 debe tener exactamente 2 caracteres mayúsculas de la A a la Z</value>
+  </data>
+  <data name="ValidacionCodigoC3" xml:space="preserve">
+    <value>El código C3 debe tener exactamente 3 caracteres mayúsculas de la A a la Z</value>
+  </data>
+  <data name="ValidacionCodigoNumerico" xml:space="preserve">
+    <value>El código numérico debe tener exactamente 3 números</value>
+  </data>
+  <data name="ValidacionFicheroImportar" xml:space="preserve">
+    <value>Error al importar fichero, asegúrese de que el formato es válido</value>
+  </data>
+  <data name="ValidacionIdTipoIdentificacion" xml:space="preserve">
+    <value>El id tipo identificacion debe estar entre 1 y 999999999</value>
+  </data>
+  <data name="ValidacionIdVariedad" xml:space="preserve">
+    <value>El id variedad debe estar entre 1 y 999999999</value>
+  </data>
+  <data name="ValidacionNombreISO" xml:space="preserve">
+    <value>El nombre iso debe tener máximo 100 caracteres</value>
+  </data>
+  <data name="ValidacionNoticiasLink" xml:space="preserve">
+    <value>El enlace debe tener máximo 250 caracteres</value>
+  </data>
+  <data name="ValidacionNumeroIdentificacion" xml:space="preserve">
+    <value>El formato del número de identificación no es correcto</value>
+  </data>
+  <data name="ValidacionRequeridosNulos" xml:space="preserve">
+    <value>Se ingresó valores nulos en campos requeridos o valores incorrectos</value>
+  </data>
+  <data name="Variedad.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 17 caracteres</value>
+  </data>
+  <data name="Variedad.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una variedad con los datos proporcionados</value>
+  </data>
+  <data name="Variedad.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Variedad.NoEncontrada" xml:space="preserve">
+    <value>Variedad no encontrada</value>
+  </data>
+  <data name="Variedad.NombreInvalido" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Variedad.VariedadesRelacionCultivo" xml:space="preserve">
+    <value>Al menos una variedad que desea eliminar está asociada a un cultivo</value>
+  </data>
+  <data name="Variedad.VariedadLongitudNombre" xml:space="preserve">
+    <value>La longitud del nombre de la variedad debe ser entre 1 y 100 caracteres</value>
+  </data>
+  <data name="Variedad.VariedadRelacionCultivo" xml:space="preserve">
+    <value>La variedad que desea eliminar está asociada a un cultivo</value>
+  </data>
+  <data name="Pais.ValidacionNombre" xml:space="preserve">
+    <value>La longitud del nombre de país debe ser entre 1 y 100 caracteres</value>
+  </data>
+  <data name="NoticiasVuce.NoticiasLinkInvalido" xml:space="preserve">
+    <value>El enlace debe ser una URL válida</value>
+  </data>
+  <data name="MensajeTraza" xml:space="preserve">
+    <value>Ha ocurrido un error inesperado, inténtelo de nuevo más tarde. Si el problema persiste, contacte con el servicio de soporte indicando el código de error</value>
+  </data>
+  <data name="TipoIdentificacionFisicaComienza0" xml:space="preserve">
+    <value>El número de identificación no debe comenzar en 0</value>
+  </data>
+  <data name="ExcepcionMorosidad.NoEncontrada" xml:space="preserve">
+    <value>Excepción morosidad no encontrada</value>
+  </data>
+  <data name="Moneda.NoEncontrada" xml:space="preserve">
+    <value>Moneda no encontrada</value>
+  </data>
+  <data name="Tarifa.NoEncontrada" xml:space="preserve">
+    <value>Tarifa no encontrada</value>
+  </data>
+  <data name="ExcepcionMorosidad.NumeroIdentificacionExcedeLimite" xml:space="preserve">
+    <value>El formato del número de identificación no es correcto</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoIdentificacionFisicaComienza0" xml:space="preserve">
+    <value>El número de identificación de tipo física no puede comenzar con 0</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoIdentificacionNoEncontrado" xml:space="preserve">
+    <value>Tipo identificación no es Física, Jurídica, Dimex o Pasaporte</value>
+  </data>
+  <data name="EstadoExcepcionMorosidad.NoEncontrado" xml:space="preserve">
+    <value>Estado excepción morosidad no encontrado</value>
+  </data>
+  <data name="TipoAccionExcepcionMorosidad.NoEncontrado" xml:space="preserve">
+    <value>Tipo acción excepción morosidad no encontrado</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioMayorIgualFechaVencimiento" xml:space="preserve">
+    <value>La fecha de inicio debe ser menor a la fecha de vencimiento</value>
+  </data>
+  <data name="Categoria.NoEncontrada" xml:space="preserve">
+    <value>Categoría no encontrada</value>
+  </data>
+  <data name="Categoria.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una categoría de mercancía con los datos proporcionados</value>
+  </data>
+  <data name="Categoria.NombreInvalido" xml:space="preserve">
+    <value>La categoría de mercancía es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Sector.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un sector con los datos proporcionados</value>
+  </data>
+  <data name="Sector.NoEncontrado" xml:space="preserve">
+    <value>Sector no encontrado</value>
+  </data>
+  <data name="Sector.NombreInvalido" xml:space="preserve">
+    <value>El sector es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Provincia.NoEncontrada" xml:space="preserve">
+    <value>Provincia no encontrada</value>
+  </data>
+  <data name="Provincia.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una provincia con los datos proporcionados</value>
+  </data>
+  <data name="Caracteristica.NoEncontrada" xml:space="preserve">
+    <value>Característica no encontrada</value>
+  </data>
+  <data name="Caracteristica.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una característica con los datos proporcionados</value>
+  </data>
+  <data name="Caracteristica.NombreInvalido" xml:space="preserve">
+    <value>La característica es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 150 caracteres</value>
+  </data>
+  <data name="Caracteristica.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Ocurrió un error al obtener las instituciones</value>
+  </data>
+  <data name="Caracteristica.IntitucionNoEncontrada" xml:space="preserve">
+    <value>Institución no encontrada</value>
+  </data>
+  <data name="Familia.NoEncontrada" xml:space="preserve">
+    <value>Familia no encontrada</value>
+  </data>
+  <data name="Familia.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una familia con los datos proporcionados</value>
+  </data>
+  <data name="Familia.NombreInvalido" xml:space="preserve">
+    <value>La familia es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="BloqueComercial.NoEncontrada" xml:space="preserve">
+    <value>Bloque comercial no encontrado</value>
+  </data>
+  <data name="BloqueComercial.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un bloque comercial con los datos proporcionados</value>
+  </data>
+  <data name="TipoProducto.NoEncontrado" xml:space="preserve">
+    <value>Tipo de producto no encontrado</value>
+  </data>
+  <data name="TipoProducto.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un tipo de producto con los datos proporcionados</value>
+  </data>
+  <data name="Sustancia.NoEncontrada" xml:space="preserve">
+    <value>Sustancia no encontrada</value>
+  </data>
+  <data name="ExcepcionMorosidad.EliminacionNoPermitida" xml:space="preserve">
+    <value>Eliminación no permitida por estado incorrecto</value>
+  </data>
+  <data name="Sustancia.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una sustancia con los datos proporcionados</value>
+  </data>
+  <data name="Sustancia.NombreInvalido" xml:space="preserve">
+    <value>El nombre es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 300 caracteres</value>
+  </data>
+  <data name="Sustancia.CasInvalido" xml:space="preserve">
+    <value>El Nº CAS es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Distrito.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un distrito con los datos proporcionados</value>
+  </data>
+  <data name="Distrito.NoEncontrado" xml:space="preserve">
+    <value>Distrito no encontrado</value>
+  </data>
+  <data name="Distrito.NombreInvalido" xml:space="preserve">
+    <value>El distrito es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Sustancia.ListaCaqInvalido" xml:space="preserve">
+    <value>La lista CAQ es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Requisito.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un requisito con los datos proporcionados</value>
+  </data>
+  <data name="Requisito.DescripcionInvalida" xml:space="preserve">
+    <value>La descripción es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 300 caracteres</value>
+  </data>
+  <data name="Requisito.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Falló al obtener instituciones</value>
+  </data>
+  <data name="Requisito.IntitucionNoEncontrada" xml:space="preserve">
+    <value>Institución no encontrada</value>
+  </data>
+  <data name="Requisito.NoEncontrado" xml:space="preserve">
+    <value>Requisito no encontrado</value>
+  </data>
+  <data name="Familia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Barrio.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un barrio con los datos proporcionados</value>
+  </data>
+  <data name="Barrio.DistritoNoActualizable" xml:space="preserve">
+    <value>El campo distrito no es actualizable</value>
+  </data>
+  <data name="Barrio.NoEncontrado" xml:space="preserve">
+    <value>Barrio no encontrado</value>
+  </data>
+  <data name="Barrio.NombreInvalido" xml:space="preserve">
+    <value>El barrio es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una característica de tipo de producto con los datos proporcionados</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.NoEncontrada" xml:space="preserve">
+    <value>Característica tipo producto no encontrada</value>
+  </data>
+  <data name="BloqueComercial.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="BloqueComercial.NombreInvalido" xml:space="preserve">
+    <value>Bloque comercial es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 300 caracteres</value>
+  </data>
+  <data name="Provincia.CantonesRelacionados" xml:space="preserve">
+    <value>Existen cantones relacionados a la provincia</value>
+  </data>
+  <data name="Provincia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Provincia.NombreInvalido" xml:space="preserve">
+    <value>La provincia es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="ProductoRequisito.NoEncontrada" xml:space="preserve">
+    <value>Producto requisito no encontrado</value>
+  </data>
+  <data name="Categoria.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Sustancia.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="PaisBloqueComercial.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un país de bloque comercial con los datos proporcionados</value>
+  </data>
+  <data name="PaisBloqueComercial.NoEncontrada" xml:space="preserve">
+    <value>País de bloque comercial no encontrada</value>
+  </data>
+  <data name="PaisBloqueComercial.PaisNoEncontrado" xml:space="preserve">
+    <value>País no encontrado</value>
+  </data>
+  <data name="PaisBloqueComercial.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>El archivo contiene un pais repetido</value>
+  </data>
+  <data name="Canton.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Canton.DistritosRelacionados" xml:space="preserve">
+    <value>Existen distritos relacionados con el cantón</value>
+  </data>
+  <data name="Canton.NombreInvalido" xml:space="preserve">
+    <value>El cantón  es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Canton.ProvinciaInexistente" xml:space="preserve">
+    <value>Provincia inexistente</value>
+  </data>
+  <data name="Distrito.BarriosRelacionados" xml:space="preserve">
+    <value>Existe distrito con barrios relacionados</value>
+  </data>
+  <data name="Distrito.CantonInexistente" xml:space="preserve">
+    <value>Cantón inexistente</value>
+  </data>
+  <data name="Distrito.CantonNoActualizable" xml:space="preserve">
+    <value>El campo cantón no es actualizable</value>
+  </data>
+  <data name="Distrito.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="SustanciaControlada.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una sustancia controlada con los datos proporcionados</value>
+  </data>
+  <data name="SustanciaControlada.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="SustanciaControlada.FamiliaNoEncontrada" xml:space="preserve">
+    <value>Familia no encontrada</value>
+  </data>
+  <data name="SustanciaControlada.NoEncontrada" xml:space="preserve">
+    <value>Sustancia controlada no encontrada</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.CaracteristicaNoEncontrada" xml:space="preserve">
+    <value>Característica no encontrada</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicado en el archivo</value>
+  </data>
+  <data name="Barrio.CantonInexistente" xml:space="preserve">
+    <value>Cantón inexistente</value>
+  </data>
+  <data name="Barrio.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Barrio.DistritoInexistente" xml:space="preserve">
+    <value>Distrito inexistente</value>
+  </data>
+  <data name="Barrio.ProvinciaInexistente" xml:space="preserve">
+    <value>Provincia inexistente</value>
+  </data>
+  <data name="Distrito.ProvinciaInexistente" xml:space="preserve">
+    <value>Provincia inexistente</value>
+  </data>
+  <data name="SustanciaControlada.ClasificacionArancelariaTamano" xml:space="preserve">
+    <value>La clasificación arancelaria es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="SustanciaControlada.ClasificacionAshraeTamano" xml:space="preserve">
+    <value>La clasificación ashrae es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="SustanciaControlada.PotencialCalentamientoGlobalTamano" xml:space="preserve">
+    <value>El potencial calentamiento global es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="TipoProducto.CaracteristicaRelacionadas" xml:space="preserve">
+    <value>Existe una característica asociada a otra institución</value>
+  </data>
+  <data name="TipoProducto.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="TipoProducto.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>Falla en servicio gestion usuario</value>
+  </data>
+  <data name="TipoProducto.InstitucionNoEncontrado" xml:space="preserve">
+    <value>Institución no es DCA o DIPOA</value>
+  </data>
+  <data name="TipoProducto.InstitucionNoValida" xml:space="preserve">
+    <value>Institucion Invalida</value>
+  </data>
+  <data name="TipoProducto.ProductoRequisitoExiste" xml:space="preserve">
+    <value>Existe requisito relacionado con el tipo de producto</value>
+  </data>
+  <data name="TipoProducto.TipoTamano" xml:space="preserve">
+    <value>El campo tipo es requerido, debe tener un tamaño mayor a 0 y un máximo de 200 caracteres</value>
+  </data>
+  <data name="Familia.SustanciasControladasRelacionadas" xml:space="preserve">
+    <value>La(s) familias(s) tiene(n) sustancias controladas relacionadas</value>
+  </data>
+  <data name="Provincia.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 1 caracter</value>
+  </data>
+  <data name="Canton.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 3 caracteres</value>
+  </data>
+  <data name="Canton.ProvinciaNoActualizable" xml:space="preserve">
+    <value>El campo provincia no es actualizable</value>
+  </data>
+  <data name="Barrio.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 7 caracteres</value>
+  </data>
+  <data name="Distrito.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 5 caracteres</value>
+  </data>
+  <data name="Canton.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un cantón con los datos proporcionados</value>
+  </data>
+  <data name="Categoria.CategoriaInstitucionInvalida" xml:space="preserve">
+    <value>La institución no es DCA o DIPOA</value>
+  </data>
+  <data name="Categoria.FalloServicioAccesoGestionUsuario" xml:space="preserve">
+    <value>No se lograron obtener instituciones</value>
+  </data>
+  <data name="Categoria.InstitucionNoEncontrado" xml:space="preserve">
+    <value>Institución no encontrada</value>
+  </data>
+  <data name="Categoria.ProductoRequisitoRelacionado" xml:space="preserve">
+    <value>Existe un requisito de producto relacionado</value>
+  </data>
+  <data name="Categoria.TipoProductoRelacionado" xml:space="preserve">
+    <value>Existen categorías en tipo producto relacionadas</value>
+  </data>
+  <data name="Requisito.RequisitoCodigoTamano" xml:space="preserve">
+    <value>El codigo debe tener maximo 50 caracteres</value>
+  </data>
+  <data name="Requisito.RequisitoDescripcionTamano" xml:space="preserve">
+    <value>La descripción es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 300 caracteres</value>
+  </data>
+  <data name="Requisito.RequisitoInstitucionInvalida" xml:space="preserve">
+    <value>Institucion Invalidad</value>
+  </data>
+  <data name="Requisito.RequisitoVersionTamano" xml:space="preserve">
+    <value>La version debe tener maximo 10  caracteres</value>
+  </data>
+  <data name="ProductoRequisito.RequisitoNoEncontrado" xml:space="preserve">
+    <value>Requisito no encontrado</value>
+  </data>
+  <data name="TipoProducto.CategoriaNoEncontrado" xml:space="preserve">
+    <value>Categoría no encontrada</value>
+  </data>
+  <data name="Sector.CodigoInvalido" xml:space="preserve">
+    <value>El código es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 10 caracteres</value>
+  </data>
+  <data name="Establecimiento.ActividadPrimariaInvalido" xml:space="preserve">
+    <value>La actividad primaria es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Establecimiento.ActividadSecundariaInvalido" xml:space="preserve">
+    <value>La actividad secundaria no debe tener más de 50 caracteres</value>
+  </data>
+  <data name="Establecimiento.CantonInvalido" xml:space="preserve">
+    <value>El cantón es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Establecimiento.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un establecimiento con los datos proporcionados</value>
+  </data>
+  <data name="Establecimiento.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Establecimiento.DireccionExactaInvalido" xml:space="preserve">
+    <value>La dirección es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 250 caracteres</value>
+  </data>
+  <data name="Establecimiento.DistritoInvalido" xml:space="preserve">
+    <value>El distrito es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Establecimiento.EstablecimientoExiste" xml:space="preserve">
+    <value>Ya existe un establecimiento con los datos proporcionados</value>
+  </data>
+  <data name="Establecimiento.FechaVencimientoMenorHoy" xml:space="preserve">
+    <value>La fecha de vencimiento es un campo requerido, debe ser una fecha mayor o igual a hoy</value>
+  </data>
+  <data name="Establecimiento.NoEncontrado" xml:space="preserve">
+    <value>Establecimiento no encontrado</value>
+  </data>
+  <data name="Establecimiento.NombreEstablecimientoInvalido" xml:space="preserve">
+    <value>El nombre del establecimiento es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Establecimiento.NumeroCvoInvalido" xml:space="preserve">
+    <value>El número CVO es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 15 caracteres</value>
+  </data>
+  <data name="Establecimiento.ProvinciaInvalido" xml:space="preserve">
+    <value>La provinciaes un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Caracteristica.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el archivo importado</value>
+  </data>
+  <data name="Canton.NoEncontrado" xml:space="preserve">
+    <value>Cantón no encontrado</value>
+  </data>
+  <data name="Caracteristica.CaracteristicaInstitucionInvalida" xml:space="preserve">
+    <value>Institución no es DCA o DIPOA</value>
+  </data>
+  <data name="Caracteristica.TipoProductoRelacionado" xml:space="preserve">
+    <value>Existe característica de tipo producto relacionadas</value>
+  </data>
+  <data name="Sector.DatosDuplicadosArchivos" xml:space="preserve">
+    <value>Existen datos duplicados en el fichero</value>
+  </data>
+  <data name="Pais.PerteneceBloqueComercial" xml:space="preserve">
+    <value>El país que desea eliminar está asociado a un bloque comercial</value>
+  </data>
+  <data name="Requisito.RequisitoImagenObligatoria" xml:space="preserve">
+    <value>La imagen es un campo requerido, debe tener un tamaño mayor a 0</value>
+  </data>
+  <data name="Requisito.RequisitoNombreImagen" xml:space="preserve">
+    <value>El nombre de la imagen es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Establecimiento.EstadoEstablecimientoInvalido" xml:space="preserve">
+    <value>El estado es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 20 caracteres</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteNTRegimen" xml:space="preserve">
+    <value>Si el tipo de trámite es nota técnica es obligatorio el ingreso del régimen</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteRegimen" xml:space="preserve">
+    <value>Si el tipo de trámite es distinto a nota técnica no se debe ingresar el régimen</value>
+  </data>
+  <data name="ExcepcionMorosidad.NombreEmpresaInvalido" xml:space="preserve">
+    <value>El nombre de empresa es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioMenorAlDia" xml:space="preserve">
+    <value>La fecha de inicio es un campo requerido, debe ser una fecha mayor o igual a hoy</value>
+  </data>
+  <data name="ExcepcionMorosidad.ObservacionesInvalidas" xml:space="preserve">
+    <value>El campo observaciones es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 250 caracteres</value>
+  </data>
+  <data name="ExcepcionMorosidad.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe una excepción de morosidad con los datos proporcionados</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoTramiteInvalido" xml:space="preserve">
+    <value>Trámite no encontrado</value>
+  </data>
+  <data name="ExcepcionMorosidad.TipoAccionInvalido" xml:space="preserve">
+    <value>El tipo de acción no es válido</value>
+  </data>
+  <data name="ExcepcionMorosidad.SubTipoTramiteInvalido" xml:space="preserve">
+    <value>El campo tipo de trámite es inválido</value>
+  </data>
+  <data name="ProductoRequisito.Duplicados" xml:space="preserve">
+    <value>Ya existe un producto de requisito con los datos proporcionados</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaVencimientoInvalida" xml:space="preserve">
+    <value>La fecha de vencimiento debe ser una fecha mayor o igual a hoy</value>
+  </data>
+  <data name="ExcepcionMorosidad.FechaInicioInvalida" xml:space="preserve">
+    <value>La fecha de inicio es un campo requerido, debe ser una fecha mayor o igual a hoy</value>
+  </data>
+  <data name="SustanciaControlada.TipoGasTamano" xml:space="preserve">
+    <value>Tipo de gas es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 100 caracteres</value>
+  </data>
+  <data name="Pais.PerteneceRequisito" xml:space="preserve">
+    <value>El país que desea eliminar está asociado a un requisito</value>
+  </data>
+  <data name="TipoProducto.CategoriaInstitucion" xml:space="preserve">
+    <value>La categoría no pertenece a la institución</value>
+  </data>
+  <data name="ProductoRequisito.TipoProductoInstitucion" xml:space="preserve">
+    <value>El tipo de producto no pertenece a la institución</value>
+  </data>
+  <data name="ProductoRequisito.TipoProductoNoEncontrada" xml:space="preserve">
+    <value>Tipo no encontrado</value>
+  </data>
+  <data name="PaisBloqueComercial.BloqueComercialNoEncontrado" xml:space="preserve">
+    <value>Bloque comercial no encontrado</value>
+  </data>
+  <data name="TipoProducto.CategoriaPerteneceAOtraInstitucion" xml:space="preserve">
+    <value>La categoría no pertenece a la institución</value>
+  </data>
+  <data name="CaracteristicaTipoProducto.CaracteristicaNoPerteneceInstitucion" xml:space="preserve">
+    <value>La característica no pertenece a la institución</value>
+  </data>
+  <data name="ProductoRequisito.DatosDuplicadosArchivo" xml:space="preserve">
+    <value>Existen datos duplicados en el archivo</value>
+  </data>
+  <data name="Provincia.ProvinciaRelacionCanton" xml:space="preserve">
+    <value>Existen cantones relacionados con la provincia</value>
+  </data>
+  <data name="Requisito.RequisitoTieneProductosAsociados" xml:space="preserve">
+    <value>Existe un tipo de producto asociada a otra institución</value>
+  </data>
+  <data name="Productos.DatosDuplicados" xml:space="preserve">
+    <value>Ya existe un producto con los datos proporcionados</value>
+  </data>
+  <data name="Productos.TamanoClase" xml:space="preserve">
+    <value>La clase es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 20 caracteres</value>
+  </data>
+  <data name="Productos.TamanoPresentacion" xml:space="preserve">
+    <value>La presentación es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 20 caracteres</value>
+  </data>
+  <data name="Productos.NombreComunInvalido" xml:space="preserve">
+    <value>El nombre común es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Productos.TamanoNombreCientifico" xml:space="preserve">
+    <value>El nombre científico es un campo requerido, debe tener un tamaño mayor a 0 y un máximo de 50 caracteres</value>
+  </data>
+  <data name="Productos.NoEncontrado" xml:space="preserve">
+    <value>Producto no encontrado</value>
+  </data>
+  <data name="Productos.DatosDuplicadosArchivos" xml:space="preserve">
+    <value>Existen datos duplicados en el archivo</value>
+  </data>
+  <data name="ExcepcionMorosidad.DatosArchivoImportarInvalido" xml:space="preserve">
+    <value>Importe un archivo válido para continuar</value>
+  </data>
+  <data name="FalloServicioTramites" xml:space="preserve">
+    <value>Fallo al consultar el servicio de trámites</value>
+  </data>
+</root>

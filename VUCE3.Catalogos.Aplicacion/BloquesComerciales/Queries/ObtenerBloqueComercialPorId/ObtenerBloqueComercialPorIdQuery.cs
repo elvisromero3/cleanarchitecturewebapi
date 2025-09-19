@@ -1,0 +1,16 @@
+﻿using ErrorOr;
+using MediatR;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace VUCE3.Catalogos.Aplicacion.BloqueComercial.Queries.ObtenerBloqueComercialPorId
+{
+    public class ObtenerBloqueComercialPorIdQuery : IRequest<ErrorOr<Dominio.Entidades.BloqueComercial>>
+    {
+        public int IdBloqueComercial { get; set; }
+    
+    }
+}

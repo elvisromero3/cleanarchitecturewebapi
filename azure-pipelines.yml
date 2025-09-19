@@ -1,0 +1,73 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: windows-latest
+
+    variables:
+      buildConfiguration: 'Release'
+
+    steps:
+    - checkout: self
+      fetchDepth: 0
+
+    - task: DotNetCoreCLI@2
+      displayName: Restore
+      inputs:
+        command: 'restore'
+        projects: '**/*.sln'
+        feedsToUse: 'select'
+
+    - task: SonarCloudPrepare@2
+      inputs:
+        SonarCloud: 'SonarCloud VUCE3'
+        organization: 'itelligent-it'
+        scannerMode: 'MSBuild'
+        projectKey: 'ITelligent-IT_VUCE3.Catalogos'
+        projectName: 'VUCE3.Catalogos'
+
+    - task: DotNetCoreCLI@2
+      displayName: Build
+      inputs:
+        command: 'build'
+        projects: '**/*.sln'
+        arguments: '--configuration $(BuildConfiguration)'
+
+    - task: DotNetCoreCLI@2
+      displayName: Test
+      inputs:
+        command: 'test'
+        projects: '**/*Tests/*.csproj'
+        arguments: '--configuration $(BuildConfiguration) --collect "Code Coverage"'
+
+    - task: SonarCloudAnalyze@2
+
+    - task: SonarCloudPublish@2
+      inputs:
+        pollingTimeoutSec: '300'
+
+- stage: Deploy
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+  jobs:
+  - job: DeployJob
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: AzureContainerApps@1
+      inputs:
+        appSourcePath: '$(Build.SourcesDirectory)'
+        azureSubscription: 'AESA Desarrollo'
+        acrName: 'vuce3dev'
+        imageToBuild: 'vuce3dev.azurecr.io/vuce3catalogospresentacion:$(Build.BuildId)'
+        containerAppName: 'catalogos'
+        resourceGroup: 'Desarrollo'
+        containerAppEnvironment: 'vuce3dev'
