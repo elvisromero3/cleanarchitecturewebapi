@@ -7,6 +7,7 @@ It provides a solid foundation for building scalable, maintainable enterprise ap
 ### Key Features
 
 - **🏗️ Clean Architecture**: Strict layer separation with dependency inversion
+- ** CQRS**:
 
 ### Layer Responsibilities
 
